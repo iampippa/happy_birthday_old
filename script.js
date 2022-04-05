@@ -1,5 +1,5 @@
 var line = document.getElementById("line")
-var txts = ['С днем рождения милашкррр', 'Зашел я короче на фейсбук и вот что нашел'];
+var txts = ['С днем рождения милашкррр', 'Зашел я значит на фейсбук и вот что нашел'];
 var txtss = ['SIIIIIIIIIIIIKE'];
 var txts3 = ['ну и эти мальчики тебя тоже поздравляют'];
 var speed = 100
@@ -92,7 +92,7 @@ setTimeout(function(){
 
 setTimeout(function(){
    document.getElementById('dr').className = "hidden" ; 
-},67000);
+},65000);
 
 async function writeLoop3(){
   for(let i = 0; i < txts3.length; i++){
