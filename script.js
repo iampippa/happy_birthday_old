@@ -92,7 +92,7 @@ setTimeout(function(){
 
 setTimeout(function(){
    document.getElementById('dr').className = "hidden" ; 
-},65000);
+},61000);
 
 async function writeLoop3(){
   for(let i = 0; i < txts3.length; i++){
@@ -105,11 +105,20 @@ async function writeLoop3(){
   return
   writeLoop()
 
-}setTimeout("writeLoop3()", 68000);
+}setTimeout("writeLoop3()", 61500);
 
 setTimeout(function(){
     document.getElementById('blulock').style.display = 'block';
-},76000);
+},70000);
+
+setTimeout(function(){
+   document.getElementById('blulock').className = "hidden" ; 
+},88000);
+
+setTimeout(function(){
+    document.getElementById('sximg').style.display = 'block';
+},88500);
+
 
 /*document.addEventListener('click', musicPlay);
 function musicPlay() {
