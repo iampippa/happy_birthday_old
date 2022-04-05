@@ -1,6 +1,7 @@
 var line = document.getElementById("line")
-var txts = ['С днем рождения милашкаррр', 'Зашел я короче на фейсбук и вот что нашел'];
+var txts = ['С днем рождения милашкррр', 'Зашел я короче на фейсбук и вот что нашел'];
 var txtss = ['SIIIIIIIIIIIIKE'];
+var txts3 = ['ну и эти мальчики тебя тоже поздравляют'];
 var speed = 100
 
 
@@ -39,7 +40,6 @@ async function writeLoop(){
   writeLoop()
 
 }
-
 
 setTimeout(function(){
     document.getElementById('fsimg').style.display = 'block';
@@ -85,14 +85,62 @@ async function writeLoop2(){
   writeLoop()
 
 }setTimeout("writeLoop2()", 36000);
-  
+
+setTimeout(function(){
+    document.getElementById('dr').style.display = 'block';
+},40000);
+
+setTimeout(function(){
+   document.getElementById('dr').className = "hidden" ; 
+},67000);
+
+async function writeLoop3(){
+  for(let i = 0; i < txts3.length; i++){
+    await typewriter(txts3[i])
+    await delay(1000)
+    await reverseTypewriter(txts3[i])
+    await delay(300)
+    
+  }
+  return
+  writeLoop()
+
+}setTimeout("writeLoop3()", 68000);
 
 setTimeout(function(){
     document.getElementById('blulock').style.display = 'block';
-},40000);
+},76000);
 
+/*document.addEventListener('click', musicPlay);
+function musicPlay() {
+    document.getElementById('audioID').play();
+    document.removeEventListener('click', musicPlay);
+}*/
+
+
+
+/*$(document).ready(function() {
+            var audioElement = document.createElement('audio');
+            audioElement.setAttribute('src', 'audio.mp3');
+            audioElement.setAttribute('autoplay', 'autoplay');
+            //audioElement.load()
+
+            $.get();
+
+            audioElement.addEventListener("load", function() {
+                audioElement.play();
+            }, true);
+
+            $('.play').click(function() {
+                audioElement.play();
+            });
+
+            $('.pause').click(function() {
+                audioElement.pause();
+            });
+        });
+*/
 function delay(ms){
   return new Promise((resolve)=>{setTimeout(()=>{resolve()},ms)})
 }
-
 writeLoop()
