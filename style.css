@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+body{
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;  
+  background-color: rgb(25,25,25);
+}
+
+.type-container{
+  position: relative;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+}
+
+#line{
+  position: relative;
+}
+
+.cursor{
+  height: 2rem;
+  width: 2px;
+  margin-left:2px;
+  background: rgba(255,255,255,.75);
+  animation: blinkTextCursor 800ms 5;
+}
+#fsimg, #seimg, #thsimg, #frsimg{
+  border-radius: 20px 20px 20px 20px;
+  margin: 0 auto;
+  animation-name:img-ani;
+  animation-duration: 2s;   
+  animation-timing-function: ease-in;
+}
+
+.hidden {
+  opacity: 0.0;
+  transition: 0.6s; 
+  transform: scale(0); 
+  pointer-events: none; 
+  display: none !important; 
+}
+.author {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.author a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-family: 'Anonymous Pro', monospace;  
+  padding: 15px;
+  font-size: 14px;
+}
+
+@keyframes img-ani {
+  from{opacity:0;}
+  to{opacity: 1;}
+}
+
+@keyframes blinkTextCursor{
+  from{opacity: 1;}
+  to{opacity: 0;}
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
